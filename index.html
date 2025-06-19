@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Benjamin Atkins | Animation Portfolio</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
     body {
       font-family: Helvetica, Arial, sans-serif;
@@ -15,65 +16,20 @@
       background: #ffffff;
       padding: 40px 20px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    .subtitle {
-      margin-top: 8px;
-      font-size: 18px;
-      color: #666;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-      overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-    }
-    .card video,
-    .card img {
-      width: 100%;
-      display: block;
-    }
-    .card h3 {
-      margin: 0;
-      padding: 12px 16px;
-      font-size: 16px;
-      border-top: 1px solid #eeeeee;
-    }
-    a {
-      color: #0073e6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      color: #777;
-      font-size: 14px;
-    }
+    h1 { margin: 0; font-size: 32px; }
+    .subtitle { margin-top: 8px; font-size: 18px; color: #666; }
+    .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+    h2 { font-size: 24px; margin-bottom: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 20px; }
+    .card { background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.05); overflow:hidden; transition:transform 0.2s ease; }
+    .card:hover { transform: translateY(-4px); }
+    .card video, .card lottie-player { width:100%; display:block; }
+    .card h3 { margin:0; padding:12px 16px; font-size:16px; border-top:1px solid #eee; }
+    a { color:#0073e6; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    footer { text-align:center; padding:40px 20px; color:#777; font-size:14px; }
   </style>
 </head>
 <body>
@@ -90,7 +46,7 @@
       <div class="card"><video src="paperplane.gif.mp4" autoplay loop muted playsinline></video><h3>Paper Plane Loop</h3></div>
       <div class="card"><video src="SadBunny.gif.mp4" autoplay loop muted playsinline></video><h3>Sad Bunny</h3></div>
       <div class="card"><video src="EpicRainbowRoadCakePunk.gif.mp4" autoplay loop muted playsinline></video><h3>Rainbow Cakepunk</h3></div>
-      <div class="card"><video src="Ar15Legendary.gif.mp4" autoplay loop muted playsinline></video><h3>AR-15 Legendary</h3></div>
+      <div class="card"><video src="Ar15Legendary.gif.mp4" autoplay loop muted playsinline></video><h3>AR‑15 Legendary</h3></div>
       <div class="card"><video src="tepesmokingcherry.gif.mp4" autoplay loop muted playsinline></video><h3>Smoking Cherry</h3></div>
       <div class="card"><video src="peppentinoCrotchRocketTunnel.gif.mp4" autoplay loop muted playsinline></video><h3>Peppentino Tunnel</h3></div>
       <div class="card"><video src="redowifbig.gif.mp4" autoplay loop muted playsinline></video><h3>Redo Wif Big</h3></div>
@@ -102,6 +58,26 @@
       <div class="card"><video src="immagohomethen.gif.mp4" autoplay loop muted playsinline></video><h3>Imma Go Home Then</h3></div>
       <div class="card"><video src="LegendarySolidCake.gif.mp4" autoplay loop muted playsinline></video><h3>Solid Cake</h3></div>
       <div class="card"><video src="LegendaryLiquidTerminator.gif.mp4" autoplay loop muted playsinline></video><h3>Liquid Terminator</h3></div>
+    </div>
+
+    <h2>Lottie Animations</h2>
+    <div class="grid">
+      <div class="card"><lottie-player src="QLTY.TGS.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>QLTY</h3></div>
+      <div class="card"><lottie-player src="QLTYstickerPEEK.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Sticker Peek</h3></div>
+      <div class="card"><lottie-player src="QLTYstickerSUPER.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Sticker Super</h3></div>
+      <div class="card"><lottie-player src="QLTYstickerCHEERS.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Sticker Cheers</h3></div>
+      <div class="card"><lottie-player src="QLTYcoinJSON.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin</h3></div>
+      <div class="card"><lottie-player src="QLTYstickerLAUGH.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Sticker Laugh</h3></div>
+      <div class="card"><lottie-player src="koalatest.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Koala Test</h3></div>
+      <div class="card"><lottie-player src="QLTYcoinFALLintoBAG%20(2).json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Fall (2)</h3></div>
+      <div class="card"><lottie-player src="QLTYcoinPOOFintoEXISTENCE%20(2).json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Poof (2)</h3></div>
+      <div class="card"><lottie-player src="QLTYcoinJSON%20(1)teeallll.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Teeall</h3></div>
+      <div class="card"><lottie-player src="QLTYcoinJSON%20(1)RED.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Red</h3></div>
+      <div class="card"><lottie-player src="QLTYstickerred.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Sticker Red</h3></div>
+      <div class="card"><lottie-player src="peekaboo.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Peekaboo</h3></div>
+      <div class="card"><lottie-player src="QLTYtrackANDfield.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Track & Field</h3></div>
+      <div class="card"><lottie-player src="QLTYcoinPOOFintoEXISTENCE.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Poof</h3></div>
+      <div class="card"><lottie-player src="QLTYcoinFALLintoBAG.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Fall</h3></div>
     </div>
 
     <h2>Featured Projects</h2>
@@ -121,8 +97,6 @@
     </ul>
   </div>
 
-  <footer>
-    © 2025 Benjamin Atkins
-  </footer>
+  <footer>© 2025 Benjamin Atkins</footer>
 </body>
 </html>
