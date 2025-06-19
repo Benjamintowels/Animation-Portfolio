@@ -1,102 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Benjamin Atkins | Animation Portfolio</title>
+  <meta charset="UTF-8">
+  <title>QLTY Lottie Animation Portfolio</title>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <style>
     body {
-      font-family: Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8f8f8;
-      color: #333;
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
     }
-    header {
-      background: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    h1 {
+      font-size: 2em;
+      margin-bottom: 1em;
     }
-    h1 { margin: 0; font-size: 32px; }
-    .subtitle { margin-top: 8px; font-size: 18px; color: #666; }
-    .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
-    h2 { font-size: 24px; margin-bottom: 20px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 20px; }
-    .card { background:#fff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.05); overflow:hidden; transition:transform 0.2s ease; }
-    .card:hover { transform: translateY(-4px); }
-    .card video, .card lottie-player { width:100%; display:block; }
-    .card h3 { margin:0; padding:12px 16px; font-size:16px; border-top:1px solid #eee; }
-    a { color:#0073e6; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    footer { text-align:center; padding:40px 20px; color:#777; font-size:14px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1200px;
+    }
+    lottie-player {
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 12px;
+      padding: 10px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Benjamin Atkins</h1>
-    <div class="subtitle">Animator • Motion Designer • Visual Storyteller</div>
-    <div class="subtitle">Email: <a href="mailto:trick.inc.foundation@gmail.com">trick.inc.foundation@gmail.com</a></div>
-  </header>
-
-  <div class="container">
-    <h2>Selected Animated Loops</h2>
-    <div class="grid">
-      <div class="card"><video src="tepeLegendaryBrrtPueeeeeeenk.gif.mp4" autoplay loop muted playsinline></video><h3>Tepe Legendary</h3></div>
-      <div class="card"><video src="paperplane.gif.mp4" autoplay loop muted playsinline></video><h3>Paper Plane Loop</h3></div>
-      <div class="card"><video src="SadBunny.gif.mp4" autoplay loop muted playsinline></video><h3>Sad Bunny</h3></div>
-      <div class="card"><video src="EpicRainbowRoadCakePunk.gif.mp4" autoplay loop muted playsinline></video><h3>Rainbow Cakepunk</h3></div>
-      <div class="card"><video src="Ar15Legendary.gif.mp4" autoplay loop muted playsinline></video><h3>AR‑15 Legendary</h3></div>
-      <div class="card"><video src="tepesmokingcherry.gif.mp4" autoplay loop muted playsinline></video><h3>Smoking Cherry</h3></div>
-      <div class="card"><video src="peppentinoCrotchRocketTunnel.gif.mp4" autoplay loop muted playsinline></video><h3>Peppentino Tunnel</h3></div>
-      <div class="card"><video src="redowifbig.gif.mp4" autoplay loop muted playsinline></video><h3>Redo Wif Big</h3></div>
-      <div class="card"><video src="tepechad.gif.mp4" autoplay loop muted playsinline></video><h3>Tepe Chad</h3></div>
-      <div class="card"><video src="ElonnippleAnimated.gif.mp4" autoplay loop muted playsinline></video><h3>Elon Nipple</h3></div>
-      <div class="card"><video src="HappyPepp.gif.mp4" autoplay loop muted playsinline></video><h3>Happy Pepp</h3></div>
-      <div class="card"><video src="PeppenAK47.gif.mp4" autoplay loop muted playsinline></video><h3>Peppen AK47</h3></div>
-      <div class="card"><video src="REDOspra1y.gif.mp4" autoplay loop muted playsinline></video><h3>REDO Spray</h3></div>
-      <div class="card"><video src="immagohomethen.gif.mp4" autoplay loop muted playsinline></video><h3>Imma Go Home Then</h3></div>
-      <div class="card"><video src="LegendarySolidCake.gif.mp4" autoplay loop muted playsinline></video><h3>Solid Cake</h3></div>
-      <div class="card"><video src="LegendaryLiquidTerminator.gif.mp4" autoplay loop muted playsinline></video><h3>Liquid Terminator</h3></div>
-    </div>
-
-    <h2>Lottie Animations</h2>
-    <div class="grid">
-      <div class="card"><lottie-player src="QLTY.TGS.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>QLTY</h3></div>
-      <div class="card"><lottie-player src="QLTYstickerPEEK.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Sticker Peek</h3></div>
-      <div class="card"><lottie-player src="QLTYstickerSUPER.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Sticker Super</h3></div>
-      <div class="card"><lottie-player src="QLTYstickerCHEERS.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Sticker Cheers</h3></div>
-      <div class="card"><lottie-player src="QLTYcoinJSON.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin</h3></div>
-      <div class="card"><lottie-player src="QLTYstickerLAUGH.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Sticker Laugh</h3></div>
-      <div class="card"><lottie-player src="koalatest.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Koala Test</h3></div>
-      <div class="card"><lottie-player src="QLTYcoinFALLintoBAG%20(2).json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Fall (2)</h3></div>
-      <div class="card"><lottie-player src="QLTYcoinPOOFintoEXISTENCE%20(2).json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Poof (2)</h3></div>
-      <div class="card"><lottie-player src="QLTYcoinJSON%20(1)teeallll.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Teeall</h3></div>
-      <div class="card"><lottie-player src="QLTYcoinJSON%20(1)RED.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Red</h3></div>
-      <div class="card"><lottie-player src="QLTYstickerred.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Sticker Red</h3></div>
-      <div class="card"><lottie-player src="peekaboo.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Peekaboo</h3></div>
-      <div class="card"><lottie-player src="QLTYtrackANDfield.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Track & Field</h3></div>
-      <div class="card"><lottie-player src="QLTYcoinPOOFintoEXISTENCE.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Poof</h3></div>
-      <div class="card"><lottie-player src="QLTYcoinFALLintoBAG.json" background="transparent" speed="1" loop autoplay></lottie-player><h3>Coin Fall</h3></div>
-    </div>
-
-    <h2>Featured Projects</h2>
-    <ul>
-      <li><a href="https://youtu.be/Uk-nEpX_600" target="_blank">Custom YouTube Intro – Bailey Payne</a></li>
-      <li><a href="https://youtu.be/BvIrK-qkjc0" target="_blank">Tricking Shonen Cartoon – Main Episode</a></li>
-      <li><a href="https://youtu.be/hYPgTa5XzwI" target="_blank">Tricking Shonen Cartoon – BTS Audio Mixing</a></li>
-      <li><a href="https://youtu.be/cUhm7QTU2cc" target="_blank">Tricking Shonen Cartoon – Other Episode</a></li>
-      <li><a href="https://youtu.be/LidrrSHLkro" target="_blank">Original Cartoon Clip 1</a></li>
-      <li><a href="https://youtu.be/WTiTE1muwFI" target="_blank">Original Cartoon Clip 2</a></li>
-      <li><a href="https://youtu.be/dPRJPk8nZzs" target="_blank">King of the Hill Revival Lofi Loop</a></li>
-      <li><a href="https://youtu.be/jA3DkD0ExRY" target="_blank">DeFi Finance Explainer</a></li>
-      <li><a href="https://youtu.be/r34Pcw1DEDU" target="_blank">Galaxy Gathering – Xsens MoCap</a></li>
-      <li><a href="https://youtu.be/pDTSbTXa_2s" target="_blank">MoCap Demo Reel 1</a></li>
-      <li><a href="https://youtu.be/pAMVvJTqGOc" target="_blank">MoCap Demo Reel 2</a></li>
-      <li><a href="https://www.youtube.com/watch?v=XkGddowepZE" target="_blank">AI Animation Compilation</a></li>
-    </ul>
+  <h1>QLTY Lottie Animation Portfolio</h1>
+  <div class="grid">
+    <lottie-player src="1.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="2.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="3.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="4.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="5.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="6.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="7.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="8.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="9.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="10.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="11.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="12.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="13.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="14.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="15.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="16.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="17.json" background="transparent" speed="1" loop autoplay></lottie-player>
+    <lottie-player src="18.json" background="transparent" speed="1" loop autoplay></lottie-player>
   </div>
-
-  <footer>© 2025 Benjamin Atkins</footer>
 </body>
 </html>
