@@ -41,19 +41,81 @@
     border-radius: 8px;
   }
 
-  /* ⭐ LOTTIE VERTICAL LIST */
+  /* Lottie list view uses grid layout again */
   .lottie-grid {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
-    align-items: flex-start; /* keep left aligned */
   }
 
-  .lottie-grid lottie-player {
-    width: 220px;
-    height: 220px;
+  .lottie-thumb {
+    width: 200px;
+    height: 200px;
     background: #222;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #eee;
+    box-sizing: border-box;
+  }
+
+  .lottie-thumb span {
+    word-wrap: break-word;
+  }
+
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .pagination button {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .pagination button:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+
+  .pagination span {
+    font-size: 14px;
+    color: #ccc;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .lottie-detail {
+    margin-top: 20px;
+  }
+
+  .lottie-detail button {
+    background: #333;
+    color: #fff;
+    border: 1px solid #555;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .lottie-detail h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 
   .youtube-thumb {
@@ -93,178 +155,281 @@
 
 <!-- YouTube Thumbnails -->
 <div class="section">
-<h2>Work Experience – YouTube Thumbnails</h2>
-<div class="youtube-grid">
+  <h2>Work Experience – YouTube Thumbnails</h2>
+  <div class="youtube-grid">
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/Uk-nEpX_600" target="_blank">
-    <img src="https://img.youtube.com/vi/Uk-nEpX_600/hqdefault.jpg" />
-    <p>BaileyPayne Intro</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/Uk-nEpX_600" target="_blank">
+        <img src="https://img.youtube.com/vi/Uk-nEpX_600/hqdefault.jpg" />
+        <p>BaileyPayne Intro</p>
+      </a>
+    </div>
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/BvIrK-qkjc0" target="_blank">
-    <img src="https://img.youtube.com/vi/BvIrK-qkjc0/hqdefault.jpg" />
-    <p>Tricking Shonen Ep1</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/BvIrK-qkjc0" target="_blank">
+        <img src="https://img.youtube.com/vi/BvIrK-qkjc0/hqdefault.jpg" />
+        <p>Tricking Shonen Ep1</p>
+      </a>
+    </div>
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/hYPgTa5XzwI" target="_blank">
-    <img src="https://img.youtube.com/vi/hYPgTa5XzwI/hqdefault.jpg" />
-    <p>Audio Mixing BTS</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/hYPgTa5XzwI" target="_blank">
+        <img src="https://img.youtube.com/vi/hYPgTa5XzwI/hqdefault.jpg" />
+        <p>Audio Mixing BTS</p>
+      </a>
+    </div>
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/cUhm7QTU2cc" target="_blank">
-    <img src="https://img.youtube.com/vi/cUhm7QTU2cc/hqdefault.jpg" />
-    <p>Tricking Shonen Ep2</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/cUhm7QTU2cc" target="_blank">
+        <img src="https://img.youtube.com/vi/cUhm7QTU2cc/hqdefault.jpg" />
+        <p>Tricking Shonen Ep2</p>
+      </a>
+    </div>
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/LidrrSHLkro" target="_blank">
-    <img src="https://img.youtube.com/vi/LidrrSHLkro/hqdefault.jpg" />
-    <p>Unused Cartoon Clip 1</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/LidrrSHLkro" target="_blank">
+        <img src="https://img.youtube.com/vi/LidrrSHLkro/hqdefault.jpg" />
+        <p>Unused Cartoon Clip 1</p>
+      </a>
+    </div>
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/WTiTE1muwFI" target="_blank">
-    <img src="https://img.youtube.com/vi/WTiTE1muwFI/hqdefault.jpg" />
-    <p>Unused Cartoon Clip 2</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/WTiTE1muwFI" target="_blank">
+        <img src="https://img.youtube.com/vi/WTiTE1muwFI/hqdefault.jpg" />
+        <p>Unused Cartoon Clip 2</p>
+      </a>
+    </div>
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/dPRJPk8nZzs" target="_blank">
-    <img src="https://img.youtube.com/vi/dPRJPk8nZzs/hqdefault.jpg" />
-    <p>King of the Hill Lofi</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/dPRJPk8nZzs" target="_blank">
+        <img src="https://img.youtube.com/vi/dPRJPk8nZzs/hqdefault.jpg" />
+        <p>King of the Hill Lofi</p>
+      </a>
+    </div>
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/jA3DkD0ExRY" target="_blank">
-    <img src="https://img.youtube.com/vi/jA3DkD0ExRY/hqdefault.jpg" />
-    <p>DeFi Cartoon</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/jA3DkD0ExRY" target="_blank">
+        <img src="https://img.youtube.com/vi/jA3DkD0ExRY/hqdefault.jpg" />
+        <p>DeFi Cartoon</p>
+      </a>
+    </div>
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/r34Pcw1DEDU" target="_blank">
-    <img src="https://img.youtube.com/vi/r34Pcw1DEDU/hqdefault.jpg" />
-    <p>Galaxy Gathering Promo</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/r34Pcw1DEDU" target="_blank">
+        <img src="https://img.youtube.com/vi/r34Pcw1DEDU/hqdefault.jpg" />
+        <p>Galaxy Gathering Promo</p>
+      </a>
+    </div>
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/pDTSbTXa_2s" target="_blank">
-    <img src="https://img.youtube.com/vi/pDTSbTXa_2s/hqdefault.jpg" />
-    <p>Mocap Demo 1</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/pDTSbTXa_2s" target="_blank">
+        <img src="https://img.youtube.com/vi/pDTSbTXa_2s/hqdefault.jpg" />
+        <p>Mocap Demo 1</p>
+      </a>
+    </div>
 
-<div class="youtube-thumb">
-  <a href="https://youtu.be/pAMVvJTqGOc" target="_blank">
-    <img src="https://img.youtube.com/vi/pAMVvJTqGOc/hqdefault.jpg" />
-    <p>Mocap Demo 2</p>
-  </a>
-</div>
+    <div class="youtube-thumb">
+      <a href="https://youtu.be/pAMVvJTqGOc" target="_blank">
+        <img src="https://img.youtube.com/vi/pAMVvJTqGOc/hqdefault.jpg" />
+        <p>Mocap Demo 2</p>
+      </a>
+    </div>
 
-</div>
+  </div>
 </div>
 
 <!-- GIFs -->
 <div class="section">
-<h2>Animated GIFs</h2>
-<div class="gif-grid">
+  <h2>Animated GIFs</h2>
+  <div class="gif-grid">
 
-<video src="tepeLegendaryBrrtPueeeeeeenk.gif.mp4" autoplay loop muted playsinline></video>
-<video src="paperplane.gif.mp4" autoplay loop muted playsinline></video>
-<video src="LQLFSCP.gif.mp4" autoplay loop muted playsinline></video>
-<video src="retard2233ed.gif.mp4" autoplay loop muted playsinline></video>
-<video src="Ar15Legendary.gif.mp4" autoplay loop muted playsinline></video>
-<video src="EpicRainbowRoadCakePunk.gif.mp4" autoplay loop muted playsinline></video>
-<video src="SadBunny.gif.mp4" autoplay loop muted playsinline></video>
-<video src="tepesmokingcherry.gif.mp4" autoplay loop muted playsinline></video>
-<video src="scenictepe.gif.mp4" autoplay loop muted playsinline></video>
-<video src="peppentinoCrotchRocketTunnel.gif.mp4" autoplay loop muted playsinline></video>
-<video src="redowifbig.gif.mp4" autoplay loop muted playsinline></video>
-<video src="tepechad.gif.mp4" autoplay loop muted playsinline></video>
-<video src="ElonnippleAnimated.gif.mp4" autoplay loop muted playsinline></video>
-<video src="HappyPepp.gif.mp4" autoplay loop muted playsinline></video>
-<video src="PeppenAK47.gif.mp4" autoplay loop muted playsinline></video>
-<video src="REDOspra1y.gif.mp4" autoplay loop muted playsinline></video>
-<video src="immagohomethen.gif.mp4" autoplay loop muted playsinline></video>
-<video src="LegendarySolidCake.gif.mp4" autoplay loop muted playsinline></video>
-<video src="LegendaryLiquidTerminator.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="tepeLegendaryBrrtPueeeeeeenk.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="paperplane.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="LQLFSCP.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="retard2233ed.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="Ar15Legendary.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="EpicRainbowRoadCakePunk.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="SadBunny.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="tepesmokingcherry.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="scenictepe.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="peppentinoCrotchRocketTunnel.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="redowifbig.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="tepechad.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="ElonnippleAnimated.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="HappyPepp.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="PeppenAK47.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="REDOspra1y.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="immagohomethen.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="LegendarySolidCake.gif.mp4" autoplay loop muted playsinline></video>
+    <video src="LegendaryLiquidTerminator.gif.mp4" autoplay loop muted playsinline></video>
 
-</div>
+  </div>
 </div>
 
 <!-- LOTTIE ANIMATIONS -->
 <div class="section">
-<h2>Lottie Animations</h2>
-<div class="lottie-grid">
+  <h2>Lottie Animations</h2>
 
-<lottie-player src="3.json" autoplay loop></lottie-player>
-<lottie-player src="4.json" autoplay loop></lottie-player>
-<lottie-player src="5.json" autoplay loop></lottie-player>
-<lottie-player src="10.json" autoplay loop></lottie-player>
-<lottie-player src="12.json" autoplay loop></lottie-player>
-<lottie-player src="13.json" autoplay loop></lottie-player>
-<lottie-player src="14.json" autoplay loop></lottie-player>
-<lottie-player src="15.json" autoplay loop></lottie-player>
-<lottie-player src="16.json" autoplay loop></lottie-player>
+  <!-- LIST VIEW (grid, 10 per page) -->
+  <div id="lottie-list-view">
+    <div id="lottie-grid" class="lottie-grid"></div>
+    <div class="pagination">
+      <button id="prev-page">Previous</button>
+      <span id="page-info"></span>
+      <button id="next-page">Next</button>
+    </div>
+  </div>
 
-<!-- New converted sticker Lotties -->
-<lottie-player src="AngelDogPlushie.json" autoplay loop></lottie-player>
-<lottie-player src="CherryAkiraBikeSlideFXreal.json" autoplay loop></lottie-player>
-<lottie-player src="CherryBath.json" autoplay loop></lottie-player>
-<lottie-player src="CherryCakeSlice.json" autoplay loop></lottie-player>
-<lottie-player src="CherryChicken.json" autoplay loop></lottie-player>
-<lottie-player src="CherryFlamingoReal.json" autoplay loop></lottie-player>
-<lottie-player src="CherryGN.json" autoplay loop></lottie-player>
-<lottie-player src="CherryHappyBirthdayPavel.json" autoplay loop></lottie-player>
-<lottie-player src="CherryKisses.json" autoplay loop></lottie-player>
-<lottie-player src="CherryMoney.json" autoplay loop></lottie-player>
-<lottie-player src="CherryPack1.json" autoplay loop></lottie-player>
-<lottie-player src="CherryPhone.json" autoplay loop></lottie-player>
-<lottie-player src="CherryPlanePinAdvanced.json" autoplay loop></lottie-player>
-<lottie-player src="CherryProfile.json" autoplay loop></lottie-player>
-<lottie-player src="CherryRocketRide.json" autoplay loop></lottie-player>
-<lottie-player src="CherryShoryuken.json" autoplay loop></lottie-player>
-<lottie-player src="CherryStream.json" autoplay loop></lottie-player>
-<lottie-player src="Cherrylaxin.json" autoplay loop></lottie-player>
-<lottie-player src="CherryonTop.json" autoplay loop></lottie-player>
-<lottie-player src="Cherryplane.json" autoplay loop></lottie-player>
-<lottie-player src="DealinCherry.json" autoplay loop></lottie-player>
-<lottie-player src="DogPlushieCherryFlavor.json" autoplay loop></lottie-player>
-<lottie-player src="DogPlushieStrawberryFlavor.json" autoplay loop></lottie-player>
-<lottie-player src="FruitCase.json" autoplay loop></lottie-player>
-<lottie-player src="GMCherry.json" autoplay loop></lottie-player>
-<lottie-player src="Gohanend.json" autoplay loop></lottie-player>
-<lottie-player src="KenCherry.json" autoplay loop></lottie-player>
-<lottie-player src="KingShake.json" autoplay loop></lottie-player>
-<lottie-player src="OnBlueDurovShoe.json" autoplay loop></lottie-player>
-<lottie-player src="PkCherry.json" autoplay loop></lottie-player>
-<lottie-player src="PumpCherry.json" autoplay loop></lottie-player>
-<lottie-player src="RedoLaugh.json" autoplay loop></lottie-player>
-<lottie-player src="ResistTheMatrixGlasses.json" autoplay loop></lottie-player>
-<lottie-player src="RyuCherry.json" autoplay loop></lottie-player>
-<lottie-player src="SakuraCherry.json" autoplay loop></lottie-player>
-<lottie-player src="StrawberryBackPack.json" autoplay loop></lottie-player>
-<lottie-player src="SwordCherry.json" autoplay loop></lottie-player>
-<lottie-player src="UtyaAkiraBikeSlideWithBG60real.json" autoplay loop></lottie-player>
-<lottie-player src="WhatKindOfAmerican.json" autoplay loop></lottie-player>
-<lottie-player src="WitchCherry.json" autoplay loop></lottie-player>
-<lottie-player src="WolfinCherry.json" autoplay loop></lottie-player>
-<lottie-player src="armyshake.json" autoplay loop></lottie-player>
-
+  <!-- DETAIL VIEW (page within page) -->
+  <div id="lottie-detail-view" class="lottie-detail hidden">
+    <button id="back-to-list">&larr; Back to Lottie list</button>
+    <h3 id="lottie-title"></h3>
+    <lottie-player
+      id="lottie-player-detail"
+      background="#222"
+      style="width:300px; height:300px; border-radius:8px;"
+      autoplay
+      loop>
+    </lottie-player>
+  </div>
 </div>
-</div>
+
+<script>
+  // All your Lottie JSON files in one place
+  const lottieFiles = [
+    // Original JSON Lotties
+    "3.json",
+    "4.json",
+    "5.json",
+    "10.json",
+    "12.json",
+    "13.json",
+    "14.json",
+    "15.json",
+    "16.json",
+
+    // New converted sticker Lotties
+    "AngelDogPlushie.json",
+    "CherryAkiraBikeSlideFXreal.json",
+    "CherryBath.json",
+    "CherryCakeSlice.json",
+    "CherryChicken.json",
+    "CherryFlamingoReal.json",
+    "CherryGN.json",
+    "CherryHappyBirthdayPavel.json",
+    "CherryKisses.json",
+    "CherryMoney.json",
+    "CherryPack1.json",
+    "CherryPhone.json",
+    "CherryPlanePinAdvanced.json",
+    "CherryProfile.json",
+    "CherryRocketRide.json",
+    "CherryShoryuken.json",
+    "CherryStream.json",
+    "Cherrylaxin.json",
+    "CherryonTop.json",
+    "Cherryplane.json",
+    "DealinCherry.json",
+    "DogPlushieCherryFlavor.json",
+    "DogPlushieStrawberryFlavor.json",
+    "FruitCase.json",
+    "GMCherry.json",
+    "Gohanend.json",
+    "KenCherry.json",
+    "KingShake.json",
+    "OnBlueDurovShoe.json",
+    "PkCherry.json",
+    "PumpCherry.json",
+    "RedoLaugh.json",
+    "ResistTheMatrixGlasses.json",
+    "RyuCherry.json",
+    "SakuraCherry.json",
+    "StrawberryBackPack.json",
+    "SwordCherry.json",
+    "UtyaAkiraBikeSlideWithBG60real.json",
+    "WhatKindOfAmerican.json",
+    "WitchCherry.json",
+    "WolfinCherry.json",
+    "armyshake.json"
+  ];
+
+  const pageSize = 10;
+  let currentPage = 1;
+
+  const gridEl = document.getElementById("lottie-grid");
+  const prevBtn = document.getElementById("prev-page");
+  const nextBtn = document.getElementById("next-page");
+  const pageInfoEl = document.getElementById("page-info");
+
+  const listViewEl = document.getElementById("lottie-list-view");
+  const detailViewEl = document.getElementById("lottie-detail-view");
+  const backBtn = document.getElementById("back-to-list");
+  const detailTitleEl = document.getElementById("lottie-title");
+  const detailPlayerEl = document.getElementById("lottie-player-detail");
+
+  function renderPage() {
+    gridEl.innerHTML = "";
+
+    const totalPages = Math.ceil(lottieFiles.length / pageSize);
+    if (currentPage < 1) currentPage = 1;
+    if (currentPage > totalPages) currentPage = totalPages;
+
+    const startIndex = (currentPage - 1) * pageSize;
+    const endIndex = Math.min(startIndex + pageSize, lottieFiles.length);
+
+    for (let i = startIndex; i < endIndex; i++) {
+      const file = lottieFiles[i];
+
+      const thumb = document.createElement("div");
+      thumb.className = "lottie-thumb";
+      thumb.dataset.file = file;
+
+      const label = document.createElement("span");
+      label.textContent = file;
+
+      thumb.appendChild(label);
+      thumb.addEventListener("click", () => openDetail(file));
+      gridEl.appendChild(thumb);
+    }
+
+    pageInfoEl.textContent = `Page ${currentPage} of ${totalPages}`;
+    prevBtn.disabled = currentPage === 1;
+    nextBtn.disabled = currentPage === totalPages;
+  }
+
+  function openDetail(file) {
+    // Show detail view, hide list view
+    listViewEl.classList.add("hidden");
+    detailViewEl.classList.remove("hidden");
+
+    detailTitleEl.textContent = file;
+    // Set the src on the single Lottie player (this is when it loads)
+    detailPlayerEl.setAttribute("src", file);
+  }
+
+  function backToList() {
+    // Optional: stop the animation by clearing src
+    detailPlayerEl.removeAttribute("src");
+
+    detailViewEl.classList.add("hidden");
+    listViewEl.classList.remove("hidden");
+  }
+
+  prevBtn.addEventListener("click", () => {
+    currentPage--;
+    renderPage();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentPage++;
+    renderPage();
+  });
+
+  backBtn.addEventListener("click", backToList);
+
+  // Initial render
+  renderPage();
+</script>
 
 </body>
 </html>
