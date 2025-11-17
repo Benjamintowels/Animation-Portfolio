@@ -41,31 +41,18 @@
     border-radius: 8px;
   }
 
-  /* Lottie list view uses grid layout again */
+  /* Lottie grid: back to your old layout (flex, wrapping) */
   .lottie-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
 
-  .lottie-thumb {
+  .lottie-grid lottie-player {
     width: 200px;
     height: 200px;
     background: #222;
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    color: #eee;
-    box-sizing: border-box;
-  }
-
-  .lottie-thumb span {
-    word-wrap: break-word;
   }
 
   .pagination {
@@ -92,30 +79,6 @@
   .pagination span {
     font-size: 14px;
     color: #ccc;
-  }
-
-  .hidden {
-    display: none;
-  }
-
-  .lottie-detail {
-    margin-top: 20px;
-  }
-
-  .lottie-detail button {
-    background: #333;
-    color: #fff;
-    border: 1px solid #555;
-    padding: 6px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-
-  .lottie-detail h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 18px;
   }
 
   .youtube-thumb {
@@ -270,32 +233,18 @@
 <div class="section">
   <h2>Lottie Animations</h2>
 
-  <!-- LIST VIEW (grid, 10 per page) -->
-  <div id="lottie-list-view">
-    <div id="lottie-grid" class="lottie-grid"></div>
-    <div class="pagination">
-      <button id="prev-page">Previous</button>
-      <span id="page-info"></span>
-      <button id="next-page">Next</button>
-    </div>
-  </div>
+  <!-- Grid is empty initially, will be filled by JS with 10 <lottie-player> at a time -->
+  <div id="lottie-grid" class="lottie-grid"></div>
 
-  <!-- DETAIL VIEW (page within page) -->
-  <div id="lottie-detail-view" class="lottie-detail hidden">
-    <button id="back-to-list">&larr; Back to Lottie list</button>
-    <h3 id="lottie-title"></h3>
-    <lottie-player
-      id="lottie-player-detail"
-      background="#222"
-      style="width:300px; height:300px; border-radius:8px;"
-      autoplay
-      loop>
-    </lottie-player>
+  <div class="pagination">
+    <button id="prev-page">Previous</button>
+    <span id="page-info"></span>
+    <button id="next-page">Next</button>
   </div>
 </div>
 
 <script>
-  // All your Lottie JSON files in one place
+  // All your Lottie JSON files
   const lottieFiles = [
     // Original JSON Lotties
     "3.json",
@@ -361,12 +310,6 @@
   const nextBtn = document.getElementById("next-page");
   const pageInfoEl = document.getElementById("page-info");
 
-  const listViewEl = document.getElementById("lottie-list-view");
-  const detailViewEl = document.getElementById("lottie-detail-view");
-  const backBtn = document.getElementById("back-to-list");
-  const detailTitleEl = document.getElementById("lottie-title");
-  const detailPlayerEl = document.getElementById("lottie-player-detail");
-
   function renderPage() {
     gridEl.innerHTML = "";
 
@@ -380,39 +323,17 @@
     for (let i = startIndex; i < endIndex; i++) {
       const file = lottieFiles[i];
 
-      const thumb = document.createElement("div");
-      thumb.className = "lottie-thumb";
-      thumb.dataset.file = file;
-
-      const label = document.createElement("span");
-      label.textContent = file;
-
-      thumb.appendChild(label);
-      thumb.addEventListener("click", () => openDetail(file));
-      gridEl.appendChild(thumb);
+      const player = document.createElement("lottie-player");
+      player.setAttribute("src", file);
+      player.setAttribute("background", "#222");
+      player.setAttribute("loop", "");
+      player.setAttribute("autoplay", "");
+      gridEl.appendChild(player);
     }
 
     pageInfoEl.textContent = `Page ${currentPage} of ${totalPages}`;
     prevBtn.disabled = currentPage === 1;
     nextBtn.disabled = currentPage === totalPages;
-  }
-
-  function openDetail(file) {
-    // Show detail view, hide list view
-    listViewEl.classList.add("hidden");
-    detailViewEl.classList.remove("hidden");
-
-    detailTitleEl.textContent = file;
-    // Set the src on the single Lottie player (this is when it loads)
-    detailPlayerEl.setAttribute("src", file);
-  }
-
-  function backToList() {
-    // Optional: stop the animation by clearing src
-    detailPlayerEl.removeAttribute("src");
-
-    detailViewEl.classList.add("hidden");
-    listViewEl.classList.remove("hidden");
   }
 
   prevBtn.addEventListener("click", () => {
@@ -424,8 +345,6 @@
     currentPage++;
     renderPage();
   });
-
-  backBtn.addEventListener("click", backToList);
 
   // Initial render
   renderPage();
