@@ -1,89 +1,236 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Benjamin Atkins Animation Portfolio</title>
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Atkins Animation Portfolio</title>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
     body { font-family: Arial, sans-serif; background-color: #111; color: #fff; margin: 0; padding: 20px; }
     h1, h2 { color: #ffcc00; }
     a { color: #66ccff; text-decoration: none; }
     .section { margin-bottom: 40px; }
-    .gif-grid, .lottie-grid, .youtube-grid { display: flex; flex-wrap: wrap; gap: 20px; }
-    .gif-grid video, .youtube-grid img { width: 200px; height: auto; border-radius: 8px; }
-    .lottie-grid lottie-player { width: 200px; height: 200px; background: #222; border-radius: 8px; }
+
+    .gif-grid,
+    .lottie-grid,
+    .youtube-grid,
+    .sticker-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .gif-grid video,
+    .youtube-grid img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .lottie-grid lottie-player {
+      width: 200px;
+      height: 200px;
+      background: #222;
+      border-radius: 8px;
+    }
+
     .youtube-thumb { text-align: center; width: 200px; }
     .youtube-thumb p { margin: 5px 0 0; font-size: 14px; color: #eee; }
+
+    .sticker {
+      width: 200px;
+      padding: 10px;
+      background: #222;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .sticker p {
+      margin: 5px 0 0;
+      color: #eee;
+      word-wrap: break-word;
+    }
   </style>
 </head>
 <body>
-<h1>Benjamin Atkins</h1>
-<p>Email: <a href="mailto:trick.inc.foundation@gmail.com">trick.inc.foundation@gmail.com</a></p>
-<p>Age: 35 | Years Animating: 25+</p>
-<p>Programs Used: Flash, Toon Boom, DaVinci Resolve, Illustrator, Blender, Reallusion Suite, Unity, Godot4, Source Filmmaker, ASEprite, Photoshop, Logic Pro X</p>
-<p>Education: 2 semesters at Columbia Film School</p>
-<div class="section">
-<h2>Work Experience – YouTube Thumbnails</h2>
-<div class="youtube-grid">
-<div class="youtube-thumb"><a href="https://youtu.be/Uk-nEpX_600" target="_blank"><img src="https://img.youtube.com/vi/Uk-nEpX_600/hqdefault.jpg"/><p>BaileyPayne Intro</p></a></div>
-<div class="youtube-thumb"><a href="https://youtu.be/BvIrK-qkjc0" target="_blank"><img src="https://img.youtube.com/vi/BvIrK-qkjc0/hqdefault.jpg"/><p>Tricking Shonen Ep1</p></a></div>
-<div class="youtube-thumb"><a href="https://youtu.be/hYPgTa5XzwI" target="_blank"><img src="https://img.youtube.com/vi/hYPgTa5XzwI/hqdefault.jpg"/><p>Audio Mixing BTS</p></a></div>
-<div class="youtube-thumb"><a href="https://youtu.be/cUhm7QTU2cc" target="_blank"><img src="https://img.youtube.com/vi/cUhm7QTU2cc/hqdefault.jpg"/><p>Tricking Shonen Ep2</p></a></div>
-<div class="youtube-thumb"><a href="https://youtu.be/LidrrSHLkro" target="_blank"><img src="https://img.youtube.com/vi/LidrrSHLkro/hqdefault.jpg"/><p>Unused Cartoon Clip 1</p></a></div>
-<div class="youtube-thumb"><a href="https://youtu.be/WTiTE1muwFI" target="_blank"><img src="https://img.youtube.com/vi/WTiTE1muwFI/hqdefault.jpg"/><p>Unused Cartoon Clip 2</p></a></div>
-<div class="youtube-thumb"><a href="https://youtu.be/dPRJPk8nZzs" target="_blank"><img src="https://img.youtube.com/vi/dPRJPk8nZzs/hqdefault.jpg"/><p>King of the Hill Lofi</p></a></div>
-<div class="youtube-thumb"><a href="https://youtu.be/jA3DkD0ExRY" target="_blank"><img src="https://img.youtube.com/vi/jA3DkD0ExRY/hqdefault.jpg"/><p>DeFi Cartoon</p></a></div>
-<div class="youtube-thumb"><a href="https://youtu.be/r34Pcw1DEDU" target="_blank"><img src="https://img.youtube.com/vi/r34Pcw1DEDU/hqdefault.jpg"/><p>Galaxy Gathering Promo</p></a></div>
-<div class="youtube-thumb"><a href="https://youtu.be/pDTSbTXa_2s" target="_blank"><img src="https://img.youtube.com/vi/pDTSbTXa_2s/hqdefault.jpg"/><p>Mocap Demo 1</p></a></div>
-<div class="youtube-thumb"><a href="https://youtu.be/pAMVvJTqGOc" target="_blank"><img src="https://img.youtube.com/vi/pAMVvJTqGOc/hqdefault.jpg"/><p>Mocap Demo 2</p></a></div>
-</div>
-</div>
-<div class="section">
-<h2>Animated GIFs</h2>
-<div class="gif-grid">
-<video autoplay="" loop="" muted="" playsinline="" src="tepeLegendaryBrrtPueeeeeeenk.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="paperplane.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="LQLFSCP.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="retard2233ed.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="Ar15Legendary.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="EpicRainbowRoadCakePunk.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="SadBunny.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="tepesmokingcherry.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="scenictepe.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="peppentinoCrotchRocketTunnel.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="redowifbig.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="tepechad.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="ElonnippleAnimated.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="HappyPepp.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="PeppenAK47.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="REDOspra1y.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="immagohomethen.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="LegendarySolidCake.gif.mp4"></video>
-<video autoplay="" loop="" muted="" playsinline="" src="LegendaryLiquidTerminator.gif.mp4"></video>
-</div>
-</div>
-<div class="section">
-<h2>Lottie Animations</h2>
-<div class="lottie-grid">
-<lottie-player autoplay="" loop="" src="1.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="2.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="3.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="4.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="5.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="6.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="7.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="10.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="12.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="13.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="14.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="15.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="16.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="17.json"></lottie-player>
-<lottie-player autoplay="" loop="" src="18.json"></lottie-player>
-</div>
-</div>
+  <h1>Benjamin Atkins</h1>
+  <p>Email: <a href="mailto:trick.inc.foundation@gmail.com">trick.inc.foundation@gmail.com</a></p>
+  <p>Age: 35 | Years Animating: 25+</p>
+  <p>Programs Used: Flash, Toon Boom, DaVinci Resolve, Illustrator, Blender, Reallusion Suite, Unity, Godot4, Source Filmmaker, ASEprite, Photoshop, Logic Pro X</p>
+  <p>Education: 2 semesters at Columbia Film School</p>
+
+  <!-- YouTube Thumbnails -->
+  <div class="section">
+    <h2>Work Experience – YouTube Thumbnails</h2>
+    <div class="youtube-grid">
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/Uk-nEpX_600" target="_blank">
+          <img src="https://img.youtube.com/vi/Uk-nEpX_600/hqdefault.jpg" />
+          <p>BaileyPayne Intro</p>
+        </a>
+      </div>
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/BvIrK-qkjc0" target="_blank">
+          <img src="https://img.youtube.com/vi/BvIrK-qkjc0/hqdefault.jpg" />
+          <p>Tricking Shonen Ep1</p>
+        </a>
+      </div>
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/hYPgTa5XzwI" target="_blank">
+          <img src="https://img.youtube.com/vi/hYPgTa5XzwI/hqdefault.jpg" />
+          <p>Audio Mixing BTS</p>
+        </a>
+      </div>
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/cUhm7QTU2cc" target="_blank">
+          <img src="https://img.youtube.com/vi/cUhm7QTU2cc/hqdefault.jpg" />
+          <p>Tricking Shonen Ep2</p>
+        </a>
+      </div>
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/LidrrSHLkro" target="_blank">
+          <img src="https://img.youtube.com/vi/LidrrSHLkro/hqdefault.jpg" />
+          <p>Unused Cartoon Clip 1</p>
+        </a>
+      </div>
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/WTiTE1muwFI" target="_blank">
+          <img src="https://img.youtube.com/vi/WTiTE1muwFI/hqdefault.jpg" />
+          <p>Unused Cartoon Clip 2</p>
+        </a>
+      </div>
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/dPRJPk8nZzs" target="_blank">
+          <img src="https://img.youtube.com/vi/dPRJPk8nZzs/hqdefault.jpg" />
+          <p>King of the Hill Lofi</p>
+        </a>
+      </div>
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/jA3DkD0ExRY" target="_blank">
+          <img src="https://img.youtube.com/vi/jA3DkD0ExRY/hqdefault.jpg" />
+          <p>DeFi Cartoon</p>
+        </a>
+      </div>
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/r34Pcw1DEDU" target="_blank">
+          <img src="https://img.youtube.com/vi/r34Pcw1DEDU/hqdefault.jpg" />
+          <p>Galaxy Gathering Promo</p>
+        </a>
+      </div>
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/pDTSbTXa_2s" target="_blank">
+          <img src="https://img.youtube.com/vi/pDTSbTXa_2s/hqdefault.jpg" />
+          <p>Mocap Demo 1</p>
+        </a>
+      </div>
+      <div class="youtube-thumb">
+        <a href="https://youtu.be/pAMVvJTqGOc" target="_blank">
+          <img src="https://img.youtube.com/vi/pAMVvJTqGOc/hqdefault.jpg" />
+          <p>Mocap Demo 2</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- GIFs -->
+  <div class="section">
+    <h2>Animated GIFs</h2>
+    <div class="gif-grid">
+      <video src="tepeLegendaryBrrtPueeeeeeenk.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="paperplane.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="LQLFSCP.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="retard2233ed.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="Ar15Legendary.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="EpicRainbowRoadCakePunk.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="SadBunny.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="tepesmokingcherry.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="scenictepe.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="peppentinoCrotchRocketTunnel.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="redowifbig.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="tepechad.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="ElonnippleAnimated.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="HappyPepp.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="PeppenAK47.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="REDOspra1y.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="immagohomethen.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="LegendarySolidCake.gif.mp4" autoplay loop muted playsinline></video>
+      <video src="LegendaryLiquidTerminator.gif.mp4" autoplay loop muted playsinline></video>
+    </div>
+  </div>
+
+  <!-- Lottie JSON Animations -->
+  <div class="section">
+    <h2>Lottie Animations</h2>
+    <div class="lottie-grid">
+      <lottie-player src="1.json" autoplay loop></lottie-player>
+      <lottie-player src="2.json" autoplay loop></lottie-player>
+      <lottie-player src="3.json" autoplay loop></lottie-player>
+      <lottie-player src="4.json" autoplay loop></lottie-player>
+      <lottie-player src="5.json" autoplay loop></lottie-player>
+      <lottie-player src="6.json" autoplay loop></lottie-player>
+      <lottie-player src="7.json" autoplay loop></lottie-player>
+      <lottie-player src="10.json" autoplay loop></lottie-player>
+      <lottie-player src="12.json" autoplay loop></lottie-player>
+      <lottie-player src="13.json" autoplay loop></lottie-player>
+      <lottie-player src="14.json" autoplay loop></lottie-player>
+      <lottie-player src="15.json" autoplay loop></lottie-player>
+      <lottie-player src="16.json" autoplay loop></lottie-player>
+      <lottie-player src="17.json" autoplay loop></lottie-player>
+      <lottie-player src="18.json" autoplay loop></lottie-player>
+    </div>
+  </div>
+
+  <!-- New: Telegram Sticker / TGS Animations -->
+  <div class="section">
+    <h2>Telegram Sticker Animations (TGS)</h2>
+    <p style="max-width: 700px; font-size: 14px;">
+      These are vector Telegram sticker animations (.tgs). They can be downloaded or opened directly.
+      If needed, they can be converted to Lottie JSON or MP4 for in-browser playback.
+    </p>
+    <div class="sticker-grid">
+      <div class="sticker"><a href="AngelDogPlushie.tgs" download><strong>AngelDogPlushie</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryAkiraBikeSlideFXreal.tgs" download><strong>CherryAkiraBikeSlideFXreal</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryBath.tgs" download><strong>CherryBath</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryCakeSlice.tgs" download><strong>CherryCakeSlice</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryChicken.tgs" download><strong>CherryChicken</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryFlamingoReal.tgs" download><strong>CherryFlamingoReal</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryGN.tgs" download><strong>CherryGN</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryHappyBirthdayPavel.tgs" download><strong>CherryHappyBirthdayPavel</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryKisses.tgs" download><strong>CherryKisses</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryMoney.tgs" download><strong>CherryMoney</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryPack1.tgs" download><strong>CherryPack1</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryPhone.tgs" download><strong>CherryPhone</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryPlanePinAdvanced.tgs" download><strong>CherryPlanePinAdvanced</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryProfile.tgs" download><strong>CherryProfile</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryRocketRide.tgs" download><strong>CherryRocketRide</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryShoryuken.tgs" download><strong>CherryShoryuken</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryStream.tgs" download><strong>CherryStream</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="Cherrylaxin.tgs" download><strong>Cherrylaxin</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="CherryonTop.tgs" download><strong>CherryonTop</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="Cherryplane.tgs" download><strong>Cherryplane</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="DealinCherry.tgs" download><strong>DealinCherry</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="DogPlushieCherryFlavor.tgs" download><strong>DogPlushieCherryFlavor</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="DogPlushieStrawberryFlavor.tgs" download><strong>DogPlushieStrawberryFlavor</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="FruitCase.tgs" download><strong>FruitCase</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="GMCherry.tgs" download><strong>GMCherry</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="Gohanend.tgs" download><strong>Gohanend</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="KenCherry.tgs" download><strong>KenCherry</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="KingShake.tgs" download><strong>KingShake</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="OnBlueDurovShoe.tgs" download><strong>OnBlueDurovShoe</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="PkCherry.tgs" download><strong>PkCherry</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="PumpCherry.tgs" download><strong>PumpCherry</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="RedoLaugh.tgs" download><strong>RedoLaugh</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="ResistTheMatrixGlasses.tgs" download><strong>ResistTheMatrixGlasses</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="RyuCherry.tgs" download><strong>RyuCherry</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="SakuraCherry.tgs" download><strong>SakuraCherry</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="StrawberryBackPack.tgs" download><strong>StrawberryBackPack</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="SwordCherry.tgs" download><strong>SwordCherry</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="UtyaAkiraBikeSlideWithBG60real.tgs" download><strong>UtyaAkiraBikeSlideWithBG60real</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="WhatKindOfAmerican.tgs" download><strong>WhatKindOfAmerican</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="WitchCherry.tgs" download><strong>WitchCherry</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="WolfinCherry.tgs" download><strong>WolfinCherry</strong></a><p>.tgs</p></div>
+      <div class="sticker"><a href="armyshake.tgs" download><strong>armyshake</strong></a><p>.tgs</p></div>
+    </div>
+  </div>
 </body>
 </html>
