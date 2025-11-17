@@ -41,7 +41,7 @@
     border-radius: 8px;
   }
 
-  /* Lottie grid: back to your old layout (flex, wrapping) */
+  /* Lottie grid: flex, wrapping */
   .lottie-grid {
     display: flex;
     flex-wrap: wrap;
@@ -246,9 +246,7 @@
 <script>
   // All your Lottie JSON files
   const lottieFiles = [
-    // Original JSON Lotties
-
-    // New converted sticker Lotties
+    // New converted sticker Lotties first
     "AngelDogPlushie.json",
     "CherryAkiraBikeSlideFXreal.json",
     "CherryBath.json",
@@ -290,7 +288,9 @@
     "WhatKindOfAmerican.json",
     "WitchCherry.json",
     "WolfinCherry.json",
-    "armyshake.json"
+    "armyshake.json",
+
+    // Original numbered JSON Lotties last
     "3.json",
     "4.json",
     "5.json",
@@ -299,8 +299,7 @@
     "13.json",
     "14.json",
     "15.json",
-    "16.json",
-    
+    "16.json"
   ];
 
   const pageSize = 10;
